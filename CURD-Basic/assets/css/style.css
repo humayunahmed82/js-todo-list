@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-control {
+    height: 200px;
+}
+
+.btn {
+    min-width: 100px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn img {
+    width: 14px;
+    margin-right: 8px;
+}
+
+.alert-message {
+    max-height: 0;
+    overflow: hidden;
+}
+.alert-message.show {
+    max-height: 100px;
+    overflow: visible;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CURD Basic</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="">
+                        <h2 class="pb-3">Social Media App</h2>
+
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="post" class="form-label">Write your post Here</label>
+                                <textarea class="form-control" id="post"></textarea>
+                            </div>
+                            <div id="alert" class="alert-message">
+                                <div class="mb-3 alert alert-danger" role="alert">
+                                    Posts content be blank
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="">
+                        <h3 class="">Your Post Here</h3>
+
+                        <div class="post-content" id="post-content">
+                            <div class="card mt-3">
+                                <div class="card-body d-flex">
+                                    <p class="card-text flex-shrink-1 w-100">Some quick example text to build on the
+                                        card title and make up the bulk of the card's content.</p>
+
+                                    <div class="d-flex justify-content-center flex-column ps-3">
+                                        <button onclick="edit(this)" class="btn btn-primary my-1"><img
+                                                src="./assets/images/edit.svg" alt="">
+                                            Edit</button>
+                                        <button onclick="deleted(this)" class="btn btn-danger my-1"><img
+                                                src="./assets/images/delete.svg" alt="">
+                                            Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
